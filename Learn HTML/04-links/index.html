@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>04 - Links</title>
+  </head>
+  <body>
+
+    <h1>Links in HTML</h1>
+    <p>The anchor tag &lt;a&gt; is used to create links.</p>
+
+    <hr />
+
+    <!-- 1. External Link (goes to another website) -->
+    <h2>1. External Link</h2>
+    <a href="https://www.google.com">Go to Google</a>
+
+    <br /><br />
+
+    <!-- 2. Open in New Tab using target="_blank" -->
+    <h2>2. Open in New Tab</h2>
+    <a href="https://www.github.com" target="_blank" rel="noopener noreferrer">
+      Open GitHub in New Tab
+    </a>
+    <!-- Always add rel="noopener noreferrer" with target="_blank" for security -->
+
+    <br /><br />
+
+    <!-- 3. Internal Link (links to another file in same project) -->
+    <h2>3. Internal Link (same project)</h2>
+    <a href="../03-basic-tags/headings.html">Go to Headings File</a>
+
+    <br /><br />
+
+    <!-- 4. Email Link -->
+    <h2>4. Email Link</h2>
+    <a href="mailto:ali@example.com">Send Email to Ali</a>
+
+    <br /><br />
+
+    <!-- 5. Phone Link (useful on mobile) -->
+    <h2>5. Phone Link</h2>
+    <a href="tel:+923001234567">Call: +92 300 1234567</a>
+
+    <br /><br />
+
+    <!-- 6. Anchor Link (jump to a section on same page) -->
+    <h2>6. Jump to Section on Same Page</h2>
+    <a href="#section-bottom">Jump to Bottom Section</a>
+
+    <br /><br />
+
+    <!-- 7. Image as a Link (wrap img inside a tag) -->
+    <h2>7. Image as a Link</h2>
+    <a href="https://www.wikipedia.org" target="_blank">
+      <img src="https://via.placeholder.com/150x50?text=Wikipedia" alt="Wikipedia Link" />
+    </a>
+
+    <br /><br />
+    <hr />
+
+    <!-- This section has id="section-bottom" so the anchor link above jumps here -->
+    <h2 id="section-bottom">Bottom Section (Anchor Target)</h2>
+    <p>You jumped here using an anchor link! The link had href="#section-bottom"</p>
+    <p>And this element has id="section-bottom"</p>
+
+  </body>
+</html>
