@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>05 - Images</title>
+  </head>
+  <body>
+
+    <h1>Images in HTML</h1>
+
+    <!-- img tag is SELF-CLOSING (no closing tag needed) -->
+    <!-- src = where the image is located -->
+    <!-- alt = text description (shown if image fails, used by screen readers) -->
+
+    <hr />
+
+    <!-- 1. Image from the internet (absolute URL) -->
+    <h2>1. Image from URL</h2>
+    <img src="https://picsum.photos/300/150" alt="A random nature photo" />
+
+    <br /><br />
+
+    <!-- 2. Image with width and height set -->
+    <h2>2. Image with Width and Height</h2>
+    <img src="https://picsum.photos/500/200" alt="Wide photo" width="400" height="150" />
+
+    <br /><br />
+
+    <!-- 3. Local image from the assets folder -->
+    <h2>3. Local Image (from assets folder)</h2>
+    <img src="assets/sample.jpg" alt="Local sample image" width="200" />
+    <!-- If assets/sample.jpg does not exist, alt text is shown instead -->
+
+    <br /><br />
+
+    <!-- 4. figure and figcaption (image with caption) -->
+    <h2>4. Figure with Caption</h2>
+    <figure>
+      <img src="https://picsum.photos/300/200?grayscale" alt="Grayscale landscape photo" width="300" />
+      <figcaption>Fig 1 - A grayscale landscape (using figure and figcaption)</figcaption>
+    </figure>
+
+    <br />
+
+    <!-- 5. Responsive image (stretches to fit its container) -->
+    <h2>5. Responsive Image</h2>
+    <img src="https://picsum.photos/800/200" alt="Responsive wide image" width="100%" />
+    <!-- width="100%" makes the image fill the available width -->
+
+    <br /><br />
+
+    <!-- IMPORTANT: Never skip alt attribute -->
+    <!-- Good alt text: describes what is IN the image -->
+    <!-- Bad alt text: "image", "photo", or the file name -->
+
+  </body>
+</html>
