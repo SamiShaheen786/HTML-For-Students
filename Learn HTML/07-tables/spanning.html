@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>07 - colspan and rowspan</title>
+  </head>
+  <body>
+
+    Now we learn about the Row And Column SPAN
+
+    <br />
+    <hr />
+
+    <!-- ===== COLSPAN ===== -->
+    <!-- colspan = merge multiple COLUMNS into one cell -->
+    <!-- colspan="2" means this cell takes space of 2 columns -->
+
+    Column Span (in Second Row: Name and Age columns are merged)
+
+    <table border="1">
+
+      <!-- First Row (Header) -->
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Height</th>
+        <th>Gender</th>
+      </tr>
+
+      <!-- Second Row - colspan used here -->
+      <tr>
+        <td colspan="2">SamiUllah</td>
+        <!-- colspan="2" merges Name + Age columns -->
+        <!-- So we remove the Age td (only 3 td instead of 4) -->
+        <td>5.3</td>
+        <td>Male</td>
+      </tr>
+
+      <!-- Third Row -->
+      <tr>
+        <td>Saad</td>
+        <td>22</td>
+        <td>5.5</td>
+        <!-- Missing Gender (last cell empty) -->
+      </tr>
+
+      <!-- Fourth Row -->
+      <tr>
+        <td>Ali</td>
+        <td>23</td>
+        <td>6</td>
+        <td>Male</td>
+      </tr>
+
+    </table>
+
+    <br />
+    <hr />
+
+    <!-- ===== ROWSPAN ===== -->
+    <!-- rowspan = merge multiple ROWS into one cell -->
+    <!-- rowspan="2" means this cell stretches across 2 rows -->
+
+    Row Span (in First column: Second and Third rows are merged)
+
+    <table border="1">
+
+      <!-- First Row (Header) -->
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Height</th>
+        <th>Gender</th>
+      </tr>
+
+      <!-- Second Row - rowspan used here -->
+      <tr>
+        <td rowspan="2">SamiUllah</td>
+        <!-- rowspan="2" merges this Name cell across rows 2 and 3 -->
+        <!-- So in Third Row we do NOT add a Name td -->
+        <td>21</td>
+        <td>5.3</td>
+        <td>Male</td>
+      </tr>
+
+      <!-- Third Row (no Name td because rowspan above covers it) -->
+      <tr>
+        <td>22</td>
+        <td>5.5</td>
+        <!-- No Gender td either (same as your original file) -->
+      </tr>
+
+      <!-- Fourth Row -->
+      <tr>
+        <td>Ali</td>
+        <td>23</td>
+        <td>6</td>
+        <td>Male</td>
+      </tr>
+
+    </table>
+
+  </body>
+</html>
