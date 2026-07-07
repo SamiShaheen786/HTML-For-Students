@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>08 - Form Elements</title>
+  </head>
+  <body>
+
+    <h1>More Form Elements</h1>
+
+    <form action="#" method="GET">
+
+      <!-- textarea: multi-line text box -->
+      <h2>textarea</h2>
+      <label for="bio">Your Bio:</label><br />
+      <textarea id="bio" name="bio" rows="5" cols="40" placeholder="Tell us about yourself"></textarea>
+
+      <br /><br />
+
+      <!-- select with optgroup (grouped dropdown) -->
+      <h2>select with optgroup</h2>
+      <label for="course">Choose Your Course:</label><br />
+      <select id="course" name="course">
+        <option value="">-- Select a Course --</option>
+        <optgroup label="Web Development">
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="js">JavaScript</option>
+        </optgroup>
+        <optgroup label="Programming">
+          <option value="python">Python</option>
+          <option value="java">Java</option>
+        </optgroup>
+      </select>
+
+      <br /><br />
+
+      <!-- select with selected and multiple -->
+      <h2>select with "selected" and "multiple"</h2>
+      <label for="city">Your City:</label><br />
+      <select id="city" name="city">
+        <option value="khi">Karachi</option>
+        <option value="lhr">Lahore</option>
+        <option value="isb" selected>Islamabad</option>
+        <!-- selected = this option is pre-selected -->
+        <option value="abt">Abbottabad</option>
+      </select>
+
+      <br /><br />
+
+      <!-- datalist: text input with autocomplete suggestions -->
+      <h2>datalist (autocomplete suggestions)</h2>
+      <label for="browser">Your Favourite Browser:</label><br />
+      <input list="browsers" id="browser" name="browser" placeholder="Type to search..." />
+      <datalist id="browsers">
+        <option value="Google Chrome" />
+        <option value="Mozilla Firefox" />
+        <option value="Microsoft Edge" />
+        <option value="Safari" />
+        <option value="Brave" />
+        <option value="Opera" />
+      </datalist>
+
+      <br /><br />
+
+      <!-- fieldset and legend: group related inputs together -->
+      <h2>fieldset and legend</h2>
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fn">First Name:</label>
+        <input type="text" id="fn" name="firstName" /><br /><br />
+
+        <label for="ln">Last Name:</label>
+        <input type="text" id="ln" name="lastName" /><br /><br />
+
+        <label for="ag">Age:</label>
+        <input type="number" id="ag" name="age" />
+      </fieldset>
+
+      <br />
+
+      <button type="submit">Submit</button>
+
+    </form>
+
+  </body>
+</html>

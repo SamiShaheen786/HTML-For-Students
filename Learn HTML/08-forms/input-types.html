@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>08 - Input Types</title>
+  </head>
+  <body>
+
+    <h1>All HTML Input Types</h1>
+
+    <form action="#" method="GET">
+
+      <!-- text -->
+      <p>
+        <label for="t1">type="text":</label><br />
+        <input type="text" id="t1" name="username" placeholder="Enter text" />
+      </p>
+
+      <!-- email -->
+      <p>
+        <label for="t2">type="email":</label><br />
+        <input type="email" id="t2" name="email" placeholder="you@email.com" />
+      </p>
+
+      <!-- password (input is hidden with dots) -->
+      <p>
+        <label for="t3">type="password":</label><br />
+        <input type="password" id="t3" name="password" placeholder="••••••••" />
+      </p>
+
+      <!-- number -->
+      <p>
+        <label for="t4">type="number" (min=1, max=100):</label><br />
+        <input type="number" id="t4" name="qty" min="1" max="100" value="1" />
+      </p>
+
+      <!-- date -->
+      <p>
+        <label for="t5">type="date":</label><br />
+        <input type="date" id="t5" name="dob" />
+      </p>
+
+      <!-- time -->
+      <p>
+        <label for="t6">type="time":</label><br />
+        <input type="time" id="t6" name="time" />
+      </p>
+
+      <!-- color picker -->
+      <p>
+        <label for="t7">type="color":</label><br />
+        <input type="color" id="t7" name="favcolor" value="#e66465" />
+      </p>
+
+      <!-- range slider -->
+      <p>
+        <label for="t8">type="range" (volume 0-100):</label><br />
+        <input type="range" id="t8" name="volume" min="0" max="100" value="50" />
+      </p>
+
+      <!-- file upload -->
+      <p>
+        <label for="t9">type="file":</label><br />
+        <input type="file" id="t9" name="upload" />
+      </p>
+
+      <!-- search -->
+      <p>
+        <label for="t10">type="search":</label><br />
+        <input type="search" id="t10" name="q" placeholder="Search..." />
+      </p>
+
+      <!-- tel (phone number) -->
+      <p>
+        <label for="t11">type="tel":</label><br />
+        <input type="tel" id="t11" name="phone" placeholder="+92 300 0000000" />
+      </p>
+
+      <!-- url -->
+      <p>
+        <label for="t12">type="url":</label><br />
+        <input type="url" id="t12" name="website" placeholder="https://example.com" />
+      </p>
+
+      <!-- hidden (not visible to user but sent with form) -->
+      <input type="hidden" name="formID" value="form123" />
+      <!-- The above hidden input is invisible but its value is sent when form submits -->
+
+      <button type="submit">Submit</button>
+
+    </form>
+
+  </body>
+</html>

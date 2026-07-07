@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>08 - Form Validation</title>
+  </head>
+  <body>
+
+    <h1>HTML5 Form Validation</h1>
+    <p>HTML5 has built-in validation. No JavaScript needed for basic checks.</p>
+    <p>Try clicking Submit without filling in the fields to see validation messages.</p>
+
+    <form action="#" method="GET">
+
+      <!-- required: field must not be empty -->
+      <p>
+        <label for="v1">Name (required):</label><br />
+        <input type="text" id="v1" name="name" required />
+      </p>
+
+      <!-- minlength and maxlength: controls character count -->
+      <p>
+        <label for="v2">Username (min 3, max 10 characters):</label><br />
+        <input type="text" id="v2" name="username" minlength="3" maxlength="10" required />
+      </p>
+
+      <!-- type="email" auto-validates email format -->
+      <p>
+        <label for="v3">Email:</label><br />
+        <input type="email" id="v3" name="email" required />
+      </p>
+
+      <!-- min and max: for number inputs -->
+      <p>
+        <label for="v4">Age (must be 18 to 60):</label><br />
+        <input type="number" id="v4" name="age" min="18" max="60" required />
+      </p>
+
+      <!-- pattern: validates against a regular expression -->
+      <p>
+        <label for="v5">Pakistani Phone (e.g. 03001234567):</label><br />
+        <input type="tel" id="v5" name="phone" pattern="03[0-9]{9}" title="Enter a valid Pakistani number starting with 03" required />
+      </p>
+
+      <!-- minlength on password -->
+      <p>
+        <label for="v6">Password (at least 8 characters):</label><br />
+        <input type="password" id="v6" name="password" minlength="8" required />
+      </p>
+
+      <!-- disabled: cannot be edited, not sent with form -->
+      <p>
+        <label for="v7">Disabled Field (cannot edit):</label><br />
+        <input type="text" id="v7" name="disabled" value="Cannot change this" disabled />
+      </p>
+
+      <!-- readonly: cannot be edited, BUT is sent with form -->
+      <p>
+        <label for="v8">Readonly Field (cannot edit but sent with form):</label><br />
+        <input type="text" id="v8" name="readonly" value="This is readonly" readonly />
+      </p>
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+
+    </form>
+
+  </body>
+</html>
