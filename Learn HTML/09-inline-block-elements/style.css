@@ -1,0 +1,15 @@
+/* This CSS is ONLY here to visually demonstrate block vs inline elements */
+/* In real projects, you would put styles like this in a separate CSS file */
+
+.block-demo {
+  background-color: lightblue;
+  border: 2px solid blue;
+  margin: 5px 0;
+  padding: 5px;
+}
+
+.inline-demo {
+  background-color: lightgreen;
+  border: 2px solid green;
+  padding: 5px;
+}

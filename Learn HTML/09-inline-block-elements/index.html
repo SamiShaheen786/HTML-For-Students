@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inline and Block Line Elements</title>
+    <!-- CSS is linked here ONLY to visually show the difference between block and inline -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <h1>Inline and Block Elements</h1>
+
+    <hr />
+
+    <!-- ===== BLOCK ELEMENTS ===== -->
+    <h2>Block Elements</h2>
+    <p>Block elements always start on a NEW line and take the FULL width available.</p>
+
+    <!-- div is the most common block element -->
+    <!-- It starts on a new line and stretches full width -->
+    <div class="block-demo">I am a div (Block Element) - I take full width</div>
+    <div class="block-demo">I am another div - I start on a new line</div>
+
+    <p class="block-demo">I am a p tag (Block Element) - also starts on new line</p>
+    <h3 class="block-demo">I am an h3 (Block Element)</h3>
+
+    <p>Other block elements: div, p, h1-h6, ul, ol, li, table, form, header, footer, section</p>
+
+    <hr />
+
+    <!-- ===== INLINE ELEMENTS ===== -->
+    <h2>Inline Elements</h2>
+    <p>Inline elements stay on the SAME line. They only take as much width as their content.</p>
+
+    <!-- span is the most common inline element -->
+    <span class="inline-demo">I am span (Inline)</span>
+    <span class="inline-demo">I am also span (Inline)</span>
+    <span class="inline-demo">We all stay on the same line!</span>
+
+    <br /><br />
+
+    <!-- a tag is inline -->
+    <a href="https://google.com" class="inline-demo">Google Link (Inline)</a>
+    <a href="https://github.com" class="inline-demo">GitHub Link (Inline)</a>
+
+    <br /><br />
+
+    <p>Other inline elements: span, a, img, strong, em, b, i, u, mark, label, input</p>
+
+    <hr />
+
+    <!-- ===== PRACTICAL EXAMPLE ===== -->
+    <h2>Practical Example</h2>
+
+    <!-- This paragraph has inline elements inside it -->
+    <p>Hi I Am Back and today we are learning about <strong>inline</strong> and <em>block</em> elements in <mark>HTML</mark>.</p>
+
+    <!-- div wraps everything like a box (block) -->
+    <div>
+      <p>This p is INSIDE a div. Both are block elements.</p>
+      <p>The div wraps them like a container.</p>
+    </div>
+
+    <!-- span is used to style PART of a text inline -->
+    <p>
+      This sentence has a
+      <span style="color: red;">red word</span>
+      in the middle using a span tag (inline).
+    </p>
+
+    <hr />
+
+    <!-- ===== KEY RULE ===== -->
+    <h2>Key Rule</h2>
+    <p>You CAN put inline elements inside block elements. (OK)</p>
+    <p>You should NOT put block elements inside inline elements. (Wrong)</p>
+
+    <p>Correct: <strong>span inside p</strong></p>
+    <!-- Wrong (do not do this): <span> <p>p inside span</p> </span> -->
+
+    <br />
+    <a href="https://google.com">Google</a>
+
+    <div>I am block Element</div>
+    <span>I am inline Element</span>
+
+    <a href="https://github.com">Open this link</a>
+
+  </body>
+</html>
