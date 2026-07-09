@@ -1,0 +1,39 @@
+/* CSS for ID and Classes demo */
+/* class selector uses a DOT (.) before the name */
+
+.text1 {
+  color: blue;
+  font-size: 18px;
+}
+
+.text2 {
+  color: green;
+  font-size: 18px;
+}
+
+/* Multiple classes - this only applies when BOTH text2 AND colored-text are on an element */
+.colored-text {
+  background-color: yellow;
+}
+
+/* id selector uses a HASH (#) before the name */
+#one {
+  color: red;
+  font-weight: bold;
+}
+
+#two {
+  color: purple;
+  font-style: italic;
+}
+
+#heading {
+  text-decoration: underline;
+}
+
+/* class can be used on ANY tag (h3, h4 both use .hi) */
+.hi {
+  color: orange;
+  border: 2px solid orange;
+  padding: 4px;
+}

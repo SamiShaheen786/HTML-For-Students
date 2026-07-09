@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ID and Classes in HTML</title>
+    <!-- Link style.css - CSS is used here to SHOW how id and class selectors work -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <h1>ID and Classes in HTML</h1>
+
+    <hr />
+
+    <!-- ===== CLASS ATTRIBUTE ===== -->
+    <!-- class = used to group elements so you can style them together -->
+    <!-- Multiple elements CAN share the same class name -->
+    <!-- In CSS: .classname { } -->
+
+    <h2>class attribute</h2>
+    <p>Both paragraphs below share class="text1" so they get the same style (blue color).</p>
+
+    <p class="text1">First Paragraph (class = text1)</p>
+    <p class="text1">Second Paragraph (class = text1)</p>
+
+    <hr />
+
+    <p>Both paragraphs below share class="text2" (green color).</p>
+    <p class="text2">Third Paragraph (class = text2)</p>
+    <p class="text2">Fourth Paragraph (class = text2)</p>
+
+    <hr />
+
+    <!-- Multiple classes on ONE element -->
+    <!-- Separate class names with a SPACE inside the quotes -->
+    <!-- This element gets styles from BOTH text2 AND colored-text -->
+
+    <h2>Multiple Classes on One Element</h2>
+    <p>You can put more than one class on an element. Separate with a space.</p>
+
+    <p class="text2 colored-text">
+      This paragraph has class="text2 colored-text"
+      — it gets green color from text2 AND yellow background from colored-text.
+    </p>
+    <p class="text2">This paragraph only has class="text2" (no yellow background).</p>
+
+    <hr />
+
+    <!-- ===== ID ATTRIBUTE ===== -->
+    <!-- id = unique identifier for ONE specific element on the page -->
+    <!-- NO two elements should share the same id -->
+    <!-- In CSS: #idname { } -->
+    <!-- Also used for anchor links: href="#idname" -->
+
+    <h2>id attribute</h2>
+    <p>Each paragraph below has a UNIQUE id. Each gets its own individual style.</p>
+
+    <p id="one">One Paragraph (id = one) — styled red in CSS</p>
+    <p id="two">Two Paragraph (id = two) — styled purple in CSS</p>
+
+    <hr />
+
+    <!-- id should be UNIQUE — do NOT use same id on two elements -->
+    <!-- This is WRONG (both h1 and h2 have id="heading") — do not do this -->
+    <h2>WRONG: Duplicate id (do not do this!)</h2>
+
+    <h1 id="heading">Welcome (h1 with id="heading")</h1>
+    <h2 id="heading">Welcome (h2 with same id="heading")</h2>
+    <!-- An id must be unique on a page. Duplicate ids are invalid HTML. -->
+    <!-- Although browsers may not break, it causes bugs in CSS and JavaScript. -->
+
+    <hr />
+
+    <!-- CORRECT approach: use CLASS when multiple elements need the same style -->
+    <h2>CORRECT: Use class for multiple elements</h2>
+    <p>When you want the same style on multiple elements, use a class not an id.</p>
+
+    <h3 class="hi">Welcome (h3 with class="hi")</h3>
+    <h4 class="hi">Welcome (h4 with class="hi")</h4>
+    <!-- Both h3 and h4 use class="hi" — this is correct -->
+
+    <hr />
+
+    <!-- ===== SUMMARY ===== -->
+    <h2>Summary: class vs id</h2>
+
+    <p>Use CLASS (.name) when: multiple elements share the same style.</p>
+    <p>Use ID (#name) when: it is one unique element, OR you need an anchor link target.</p>
+
+    <p>Example of id as anchor link target:</p>
+    <a href="#two">Jump to the purple paragraph above (uses id="two")</a>
+
+  </body>
+</html>
