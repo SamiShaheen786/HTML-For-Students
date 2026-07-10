@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>11 - Video</title>
+  </head>
+  <body>
+
+    <h1>Video in HTML</h1>
+    <p>The video tag lets you embed video directly into a webpage.</p>
+
+    <hr />
+
+    <!-- Basic video player -->
+    <h2>1. Basic Video Player</h2>
+    <video controls width="400">
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+      <!-- Fallback text for browsers that don't support video -->
+      Your browser does not support the video element.
+    </video>
+
+    <hr />
+
+    <!-- Video with poster image (thumbnail before play) -->
+    <h2>2. Video with Poster Image</h2>
+    <!-- poster = image shown before the user clicks play -->
+    <video controls width="400" poster="https://picsum.photos/400/200">
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+      Your browser does not support the video element.
+    </video>
+
+    <hr />
+
+    <!-- Video with autoplay, loop, muted (used for background/hero videos) -->
+    <h2>3. Autoplay + Loop + Muted</h2>
+    <p>Browsers require "muted" for autoplay to work.</p>
+    <video controls autoplay loop muted width="400">
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+      Your browser does not support the video element.
+    </video>
+
+    <hr />
+
+    <!-- Multiple source formats -->
+    <h2>4. Multiple Source Formats</h2>
+    <video controls width="400">
+      <source src="video/movie.webm" type="video/webm" />
+      <source src="video/movie.mp4" type="video/mp4" />
+      Your browser does not support the video element.
+    </video>
+
+    <hr />
+
+    <!-- Embedding YouTube using iframe -->
+    <h2>5. Embed YouTube Video (using iframe)</h2>
+    <p>YouTube videos are embedded with iframe, not the video tag.</p>
+    <iframe
+      width="400"
+      height="225"
+      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+      title="YouTube video player"
+      frameborder="0"
+      allowfullscreen>
+    </iframe>
+    <!-- Replace dQw4w9WgXcQ with any YouTube video ID from its URL -->
+
+    <hr />
+
+    <!-- Video attributes summary -->
+    <h2>Video Attributes Summary</h2>
+    <p>controls    — shows play/pause/volume/fullscreen buttons</p>
+    <p>width       — width of the video player in pixels</p>
+    <p>height      — height of the video player in pixels</p>
+    <p>autoplay    — plays automatically (needs muted in most browsers)</p>
+    <p>loop        — repeats when finished</p>
+    <p>muted       — starts with no sound</p>
+    <p>poster      — thumbnail image shown before video plays</p>
+
+  </body>
+</html>

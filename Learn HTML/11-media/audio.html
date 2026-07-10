@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>11 - Audio</title>
+  </head>
+  <body>
+
+    <h1>Audio in HTML</h1>
+    <p>The audio tag lets you embed sound into a webpage.</p>
+
+    <hr />
+
+    <!-- Basic audio with controls -->
+    <!-- controls = shows the play/pause/volume buttons to the user -->
+    <h2>1. Basic Audio Player</h2>
+    <audio controls>
+      <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg" />
+      <!-- The text below shows only if the browser does NOT support audio -->
+      Your browser does not support the audio element.
+    </audio>
+
+    <hr />
+
+    <!-- Audio attributes explained -->
+    <h2>2. Audio with autoplay + loop + muted</h2>
+    <audio controls autoplay loop muted>
+      <!-- autoplay = starts playing when page loads -->
+      <!-- loop     = repeats when the audio ends -->
+      <!-- muted    = starts with volume off (required for autoplay in most browsers) -->
+      <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <hr />
+
+    <!-- Multiple source formats for browser compatibility -->
+    <h2>3. Multiple Source Formats</h2>
+    <p>Different browsers support different audio formats. Provide multiple sources.</p>
+    <audio controls>
+      <source src="audio/sound.ogg" type="audio/ogg" />
+      <!-- Browser tries ogg first -->
+      <source src="audio/sound.mp3" type="audio/mpeg" />
+      <!-- If ogg not supported, tries mp3 -->
+      Your browser does not support the audio element.
+    </audio>
+
+    <hr />
+
+    <!-- All audio attributes reference -->
+    <h2>Audio Attributes Summary</h2>
+    <p>controls  — shows play/pause/volume UI</p>
+    <p>autoplay  — plays automatically when page loads</p>
+    <p>loop      — repeats when finished</p>
+    <p>muted     — starts with no sound</p>
+    <p>preload   — "auto" / "metadata" / "none" — controls how much to load initially</p>
+
+  </body>
+</html>
