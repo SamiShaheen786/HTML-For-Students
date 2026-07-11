@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>12 - article, section, div</title>
+  </head>
+  <body>
+
+    <h1>article, section and div</h1>
+
+    <hr />
+
+    <!-- ===== ARTICLE ===== -->
+    <!-- article = self-contained content that makes sense on its own -->
+    <!-- Examples: blog post, news article, comment, product card, forum post -->
+    <!-- Ask yourself: "Can I take this content and put it on another website and it still makes sense?" -->
+    <!-- If YES → use article -->
+
+    <h2>article tag</h2>
+
+    <article>
+      <h3>My First Blog Post</h3>
+      <p>Posted on: June 27, 2025</p>
+      <p>
+        This is a blog post inside an article tag. It is self-contained.
+        I could copy this article to another website and it would still make sense.
+      </p>
+    </article>
+
+    <article>
+      <h3>My Second Blog Post</h3>
+      <p>Posted on: June 28, 2025</p>
+      <p>
+        This is another article. Multiple articles can exist on one page
+        (like a blog listing page).
+      </p>
+    </article>
+
+    <hr />
+
+    <!-- ===== SECTION ===== -->
+    <!-- section = a thematic grouping of content with a heading -->
+    <!-- Use section to break up a page into named chapters or parts -->
+    <!-- A section should always have a heading (h1-h6) -->
+    <!-- Ask yourself: "Is this a distinct chapter or theme of the page?" -->
+    <!-- If YES → use section -->
+
+    <h2>section tag</h2>
+
+    <section>
+      <h3>About Me</h3>
+      <p>This section is about me. It has a heading and related content.</p>
+    </section>
+
+    <section>
+      <h3>My Skills</h3>
+      <p>HTML, CSS, JavaScript, Python</p>
+    </section>
+
+    <section>
+      <h3>Contact</h3>
+      <p>Email me at ali@example.com</p>
+    </section>
+
+    <hr />
+
+    <!-- ===== DIV ===== -->
+    <!-- div = generic container with NO semantic meaning -->
+    <!-- Use div ONLY when no other semantic tag fits -->
+    <!-- div is for grouping elements for CSS/layout purposes only -->
+
+    <h2>div tag (no semantic meaning)</h2>
+    <p>Use div when none of the semantic tags fit your content.</p>
+
+    <div>
+      <p>This content is inside a div. A div has no meaning on its own.</p>
+      <p>Use it just to group things for layout/styling purposes.</p>
+    </div>
+
+    <hr />
+
+    <!-- WHEN TO USE WHICH — Quick Guide -->
+    <h2>Quick Guide: article vs section vs div</h2>
+
+    <p>article → self-contained content (blog post, comment, product card)</p>
+    <p>section → chapter/theme of a page that has a heading</p>
+    <p>div     → just a layout box, no semantic meaning</p>
+
+    <!--
+      RULE OF THUMB:
+      1. Can it stand alone? → article
+      2. Is it a named part of the page? → section
+      3. Nothing else fits? → div
+    -->
+
+  </body>
+</html>
