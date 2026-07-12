@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>12 - Layout Semantic Tags</title>
+  </head>
+  <body>
+
+    <!-- ===== HEADER ===== -->
+    <!-- header = top section of the page (logo, site title, tagline) -->
+    <!-- There can be multiple headers (one for page, one inside article) -->
+    <header>
+      <h1>My Website</h1>
+      <p>Welcome to my personal site</p>
+    </header>
+
+    <hr />
+
+    <!-- ===== NAV ===== -->
+    <!-- nav = navigation links section -->
+    <!-- Only use nav for MAJOR navigation blocks -->
+    <nav>
+      <a href="#">Home</a> |
+      <a href="#">About</a> |
+      <a href="#">Blog</a> |
+      <a href="#">Contact</a>
+    </nav>
+
+    <hr />
+
+    <!-- ===== MAIN ===== -->
+    <!-- main = the primary content of the page -->
+    <!-- There should be ONLY ONE main tag per page -->
+    <main>
+
+      <h2>Main Content Area</h2>
+      <p>This is inside the main tag. It holds the primary content of the page.</p>
+      <p>
+        Everything that is unique to this page (not repeated on other pages
+        like header/footer) goes inside main.
+      </p>
+
+      <!-- ===== ASIDE ===== -->
+      <!-- aside = content related to the main content but not part of it -->
+      <!-- Used for sidebars, pull quotes, related links -->
+      <aside>
+        <h3>Sidebar (aside tag)</h3>
+        <p>Related links, ads, or extra info goes here.</p>
+        <ul>
+          <li><a href="#">Related Post 1</a></li>
+          <li><a href="#">Related Post 2</a></li>
+        </ul>
+      </aside>
+
+    </main>
+
+    <hr />
+
+    <!-- ===== FOOTER ===== -->
+    <!-- footer = bottom section of the page (copyright, links, contact) -->
+    <footer>
+      <p>Copyright 2025 My Website. All rights reserved.</p>
+      <p>Contact: <a href="mailto:ali@example.com">ali@example.com</a></p>
+    </footer>
+
+    <!-- ===== COMPARISON: Semantic vs Non-Semantic ===== -->
+    <!--
+      OLD WAY (non-semantic, avoid this):
+      <div id="header">...</div>
+      <div id="nav">...</div>
+      <div id="main">...</div>
+      <div id="sidebar">...</div>
+      <div id="footer">...</div>
+
+      NEW WAY (semantic, do this):
+      <header>...</header>
+      <nav>...</nav>
+      <main>...</main>
+      <aside>...</aside>
+      <footer>...</footer>
+    -->
+
+  </body>
+</html>
