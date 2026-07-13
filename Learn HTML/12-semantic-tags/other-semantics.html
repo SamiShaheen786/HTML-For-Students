@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>12 - Other Semantic Tags</title>
+  </head>
+  <body>
+
+    <h1>Other Useful Semantic Tags</h1>
+
+    <hr />
+
+    <!-- ===== FIGURE and FIGCAPTION ===== -->
+    <!-- figure = wraps self-contained media (image, diagram, code block) -->
+    <!-- figcaption = caption/description for the figure -->
+    <h2>figure and figcaption</h2>
+
+    <figure>
+      <img src="https://picsum.photos/300/200" alt="A beautiful landscape" width="300" />
+      <figcaption>Fig 1 - A beautiful landscape photo</figcaption>
+    </figure>
+
+    <br />
+
+    <!-- figure can also wrap a code block -->
+    <figure>
+      <pre>
+        &lt;p&gt;Hello World&lt;/p&gt;
+      </pre>
+      <figcaption>Fig 2 - A simple HTML paragraph example</figcaption>
+    </figure>
+
+    <hr />
+
+    <!-- ===== TIME ===== -->
+    <!-- time = represents a date or time -->
+    <!-- datetime attribute = machine-readable format (for search engines, calendar apps) -->
+    <h2>time tag</h2>
+
+    <p>This article was published on <time datetime="2025-06-27">June 27, 2025</time>.</p>
+    <p>The event starts at <time datetime="19:30">7:30 PM</time>.</p>
+    <p>Deadline: <time datetime="2025-12-31T23:59">December 31, 2025 at 11:59 PM</time></p>
+
+    <hr />
+
+    <!-- ===== ADDRESS ===== -->
+    <!-- address = contact information for the nearest article or body -->
+    <!-- Typically shown in italics by browsers -->
+    <h2>address tag</h2>
+
+    <address>
+      Written by: Ali Hassan <br />
+      City: Abbottabad, KPK, Pakistan <br />
+      Email: <a href="mailto:ali@example.com">ali@example.com</a> <br />
+      Phone: <a href="tel:+923001234567">+92 300 1234567</a>
+    </address>
+
+    <hr />
+
+    <!-- ===== ABBR ===== -->
+    <!-- abbr = abbreviation. title attribute shows the full form on hover -->
+    <h2>abbr tag (Abbreviation)</h2>
+
+    <p>
+      <abbr title="HyperText Markup Language">HTML</abbr> is the foundation of the web.
+    </p>
+    <p>
+      <abbr title="Cascading Style Sheets">CSS</abbr> is used for styling.
+    </p>
+    <p>
+      I live in <abbr title="Khyber Pakhtunkhwa">KPK</abbr>, Pakistan.
+    </p>
+
+    <hr />
+
+    <!-- ===== BLOCKQUOTE and CITE ===== -->
+    <!-- blockquote = a quoted block from another source -->
+    <!-- cite = title of a work (book, article, song, etc.) -->
+    <h2>blockquote and cite</h2>
+
+    <blockquote>
+      "The best way to learn programming is to build real projects."
+    </blockquote>
+    <p>— From the book <cite>Clean Code</cite> by Robert C. Martin</p>
+
+    <hr />
+
+    <!-- ===== DETAILS and SUMMARY ===== -->
+    <!-- details = a collapsible section (click to expand/collapse) -->
+    <!-- summary = the always-visible heading of the details block -->
+    <h2>details and summary (Accordion)</h2>
+
+    <details>
+      <summary>What is HTML?</summary>
+      <p>HTML stands for HyperText Markup Language. It structures web pages.</p>
+    </details>
+
+    <details>
+      <summary>What is CSS?</summary>
+      <p>CSS stands for Cascading Style Sheets. It styles HTML elements.</p>
+    </details>
+
+    <details>
+      <summary>What is JavaScript?</summary>
+      <p>JavaScript adds interactivity and behaviour to web pages.</p>
+    </details>
+
+  </body>
+</html>
