@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- ===== CHARSET ===== -->
+    <!-- charset=UTF-8 supports ALL languages, symbols, and emojis -->
+    <!-- Always put this as the FIRST meta tag in head -->
+    <meta charset="UTF-8" />
+
+    <!-- ===== VIEWPORT ===== -->
+    <!-- Makes the page responsive on mobile devices -->
+    <!-- Without this, mobile browsers zoom out to show the full desktop page -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ===== SEO META TAGS ===== -->
+    <!-- description = shown under your page title in Google search results -->
+    <meta name="description" content="Learn HTML from scratch. A complete beginner to advanced HTML course." />
+
+    <!-- keywords = list of relevant words (less important for modern SEO but good practice) -->
+    <meta name="keywords" content="html, html course, web development, html tutorial, learn html" />
+
+    <!-- author = name of the page author -->
+    <meta name="author" content="Ali Hassan" />
+
+    <!-- robots = tells search engines what to do with this page -->
+    <!-- index = include in search results, follow = follow the links on this page -->
+    <meta name="robots" content="index, follow" />
+
+    <!-- ===== OPEN GRAPH TAGS (for social media sharing) ===== -->
+    <!-- These control how your page looks when shared on Facebook, WhatsApp, LinkedIn etc. -->
+    <meta property="og:title" content="HTML Language Course" />
+    <meta property="og:description" content="A complete HTML course organized by topic." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourwebsite.com" />
+    <meta property="og:image" content="https://yourwebsite.com/preview.jpg" />
+
+    <!-- ===== TWITTER CARD TAGS ===== -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="HTML Language Course" />
+    <meta name="twitter:description" content="A complete HTML course organized by topic." />
+
+    <!-- ===== PAGE TITLE ===== -->
+    <!-- Shown in browser tab and as the headline in Google search results -->
+    <title>13 - Meta and Head Tags | HTML Course</title>
+
+    <!-- ===== FAVICON ===== -->
+    <!-- The small icon shown in the browser tab -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+    <!-- ===== LINKING CSS ===== -->
+    <!-- rel="stylesheet" tells browser this is a CSS file -->
+    <!-- href = path to the CSS file -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- ===== LINKING JAVASCRIPT ===== -->
+    <!-- defer = wait until HTML is fully loaded before running JS -->
+    <!-- Always prefer defer so JS does not block page loading -->
+    <script src="app.js" defer></script>
+
+    <!-- ===== REFRESH / REDIRECT ===== -->
+    <!-- Uncomment below to auto-refresh the page every 30 seconds -->
+    <!-- <meta http-equiv="refresh" content="30" /> -->
+
+    <!-- Uncomment below to redirect to another URL after 5 seconds -->
+    <!-- <meta http-equiv="refresh" content="5; url=https://google.com" /> -->
+
+  </head>
+  <body>
+
+    <h1>Meta and Head Tags</h1>
+
+    <p>
+      All the important meta information for this page is inside the
+      &lt;head&gt; tag above. Right-click this page and click
+      <strong>View Page Source</strong> to see all the meta tags in action.
+    </p>
+
+    <h2>What the head tag contains:</h2>
+
+    <ul>
+      <li>charset — character encoding (supports all languages)</li>
+      <li>viewport — makes page mobile-friendly</li>
+      <li>description — shown in Google search results</li>
+      <li>keywords — hints to search engines</li>
+      <li>author — who wrote the page</li>
+      <li>og tags — controls social media sharing preview</li>
+      <li>title — browser tab text and Google headline</li>
+      <li>link favicon — small icon in the browser tab</li>
+      <li>link stylesheet — connects your CSS file</li>
+      <li>script — connects your JavaScript file</li>
+    </ul>
+
+    <h2>Key Rule</h2>
+    <p>
+      Everything in &lt;head&gt; is for the browser and search engines.
+      NOTHING in &lt;head&gt; is directly visible on the webpage itself
+      (except the title which shows in the tab).
+    </p>
+
+  </body>
+</html>
