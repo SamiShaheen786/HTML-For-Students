@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>14 - Alt Text</title>
+  </head>
+  <body>
+
+    <h1>Alt Text for Images</h1>
+    <p>
+      The alt attribute describes an image for screen readers and
+      also shows as text if the image fails to load.
+    </p>
+
+    <hr />
+
+    <!-- BAD alt text examples -->
+    <h2>Bad Alt Text Examples (do NOT do this)</h2>
+
+    <!-- Bad: too vague -->
+    <img src="https://picsum.photos/200/100?random=1" alt="image" />
+    <p>alt="image" — completely meaningless</p>
+
+    <br />
+
+    <!-- Bad: using the file name -->
+    <img src="https://picsum.photos/200/100?random=2" alt="img_001.jpg" />
+    <p>alt="img_001.jpg" — file name is not a description</p>
+
+    <br />
+
+    <!-- Bad: starting with "image of" (screen readers already say "image") -->
+    <img src="https://picsum.photos/200/100?random=3" alt="image of a person" />
+    <p>alt="image of a person" — screen reader already says "image", so this is redundant</p>
+
+    <hr />
+
+    <!-- GOOD alt text examples -->
+    <h2>Good Alt Text Examples (do this)</h2>
+
+    <!-- Good: describes what is actually shown in the image -->
+    <img src="https://picsum.photos/300/150?random=4" alt="Snow-covered mountains at sunrise with orange sky" width="300" />
+    <p>alt="Snow-covered mountains at sunrise with orange sky" — describes what you see</p>
+
+    <br />
+
+    <!-- Good: decorative image gets empty alt so screen reader skips it -->
+    <img src="https://picsum.photos/100/50?random=5" alt="" width="100" />
+    <p>alt="" (empty) — decorative images that add no information should have empty alt</p>
+
+    <hr />
+
+    <!-- Labels on form inputs -->
+    <h2>Form Accessibility: Always Use label</h2>
+    <p>Every input needs a label. Screen readers read the label aloud when user focuses the input.</p>
+
+    <!-- Correct: label connected to input using for and id -->
+    <form action="#">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" />
+      <br /><br />
+
+      <label for="pass">Password:</label>
+      <input type="password" id="pass" name="password" />
+      <br /><br />
+
+      <!-- Correct: label wrapping input (alternative method) -->
+      <label>
+        Email:
+        <input type="email" name="email" />
+      </label>
+      <br /><br />
+
+      <button type="submit">Login</button>
+    </form>
+
+    <hr />
+
+    <!-- Keyboard accessibility -->
+    <h2>Keyboard Accessibility</h2>
+    <p>All interactive elements (links, buttons, inputs) should be reachable by Tab key.</p>
+    <p>Try pressing Tab key on this page to move between the links and buttons.</p>
+
+    <a href="https://google.com">Link 1 (focusable with Tab)</a> |
+    <a href="https://github.com">Link 2 (focusable with Tab)</a> |
+    <button>Button (focusable with Tab)</button>
+
+    <!-- Do NOT use div or span for clickable things (they are not keyboard accessible) -->
+    <!-- Wrong: <div onclick="doSomething()">Click me</div> -->
+    <!-- Right:  <button onclick="doSomething()">Click me</button> -->
+
+  </body>
+</html>
