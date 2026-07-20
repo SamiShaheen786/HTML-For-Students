@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>14 - ARIA Roles</title>
+  </head>
+  <body>
+
+    <h1>ARIA Roles and Attributes</h1>
+    <p>
+      ARIA = Accessible Rich Internet Applications.
+      Use ARIA when HTML alone cannot describe the purpose of an element.
+    </p>
+    <p>
+      <strong>Rule:</strong> Always prefer correct semantic HTML over ARIA.
+      Only use ARIA when no HTML tag exists for what you need.
+    </p>
+
+    <hr />
+
+    <!-- aria-label: gives an accessible name to an element that has no visible text -->
+    <h2>aria-label</h2>
+    <p>Use when a button/link has no visible text (like an icon button).</p>
+
+    <!-- Without aria-label, screen reader would just say "button" — meaningless -->
+    <!-- With aria-label, screen reader says "Close dialog button" -->
+    <button aria-label="Close dialog">X</button>
+    <button aria-label="Search">🔍</button>
+    <button aria-label="Delete item">🗑️</button>
+
+    <hr />
+
+    <!-- aria-hidden: hides an element from screen readers -->
+    <!-- Use for purely decorative elements (icons, emojis) -->
+    <h2>aria-hidden</h2>
+
+    <!-- Screen reader will skip the star icon and just read "4.5 out of 5 stars" -->
+    <p>
+      <span aria-hidden="true">⭐⭐⭐⭐</span>
+      <span>4 out of 5 stars</span>
+    </p>
+
+    <!-- Decorative separator icon -->
+    <p>
+      Home
+      <span aria-hidden="true"> | </span>
+      About
+      <span aria-hidden="true"> | </span>
+      Contact
+    </p>
+
+    <hr />
+
+    <!-- aria-expanded: tells screen readers if something is open or closed -->
+    <h2>aria-expanded</h2>
+    <p>Use on buttons that toggle content open/closed (menus, accordions).</p>
+
+    <button aria-expanded="false" onclick="this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'false' ? 'true' : 'false')">
+      Toggle Menu
+    </button>
+    <!-- When clicked, aria-expanded changes between true and false -->
+    <!-- Screen reader announces "Toggle Menu, collapsed" or "Toggle Menu, expanded" -->
+
+    <hr />
+
+    <!-- role attribute: describes what an element IS -->
+    <h2>role attribute</h2>
+
+    <!-- role="alert" = screen reader immediately reads this text when it appears -->
+    <div role="alert">
+      Form submitted successfully! (This would be read immediately by screen reader)
+    </div>
+
+    <br />
+
+    <!-- role="button" = makes a non-button element behave like a button for screen readers -->
+    <!-- Better to just use a real button tag, but sometimes role is needed -->
+    <div role="button" tabindex="0">
+      I look like a button (but using real button tag is always better)
+    </div>
+
+    <hr />
+
+    <!-- lang attribute on html tag -->
+    <h2>lang attribute (on html tag)</h2>
+    <p>
+      The lang="en" on the html tag tells screen readers what language to use.
+      This page has lang="en" so screen readers use English pronunciation.
+    </p>
+    <p>
+      If part of your page is in another language, use lang on that specific element:
+    </p>
+    <p lang="ur">یہ اردو میں ہے۔ (This is in Urdu)</p>
+    <p lang="ar">هذا باللغة العربية (This is in Arabic)</p>
+
+  </body>
+</html>
